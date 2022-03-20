@@ -15,8 +15,8 @@ function paintGreetings(name) {
 const onSubmitName = (event) => {
   event.preventDefault();
   const username = nameInput.value;
-  localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username);
+  localStorage.setItem(USERNAME_KEY, username);
 };
 
 const savedName = localStorage.getItem(USERNAME_KEY);
