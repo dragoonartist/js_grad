@@ -28,7 +28,7 @@ const quotes = [
   },
   {
     quote:
-      "너의 자질(姿質)이 아름다움을 아노니 하지 않으면 그만이거니와, 만약 마음과 힘을 다한다면 무슨 일인들 능히 하지 못하리오.",
+      "너의 자질(姿質)이 아름다움을 아노니, 하지 않으면 그만이거니와, 만약 마음과 힘을 다한다면 무슨 일인들 능히 하지 못하리오.",
     author: "세종대왕, King Sejong",
   },
   {
@@ -37,7 +37,7 @@ const quotes = [
     author: "정조대왕, King Jeongjo",
   },
   {
-    quote: "적을 알고 나를 알면, 백번 싸워도 위태롭지 않다.",
+    quote: "적을 알고 나를 알면, 백 번을 싸워도 위태롭지 않다.",
     author: "손자, Sun Tzu",
   },
   {
@@ -46,7 +46,7 @@ const quotes = [
   },
   {
     quote: "하루라도 글을 읽지 않으면 입안에 가시가 돋는다.",
-    author: "안중근, Patriot Doma Jung-geun Ahn",
+    author: "안중근, Jung-geun Ahn",
   },
 ];
 
@@ -56,5 +56,5 @@ const author = quoteContainer.querySelector("span#author");
 
 const nowQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = `${nowQuote.quote} - `;
-author.innerText = `${nowQuote.author}`;
+quote.innerText = `${nowQuote.quote}`;
+author.innerText = `${nowQuote.author}, `;

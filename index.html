@@ -9,32 +9,47 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="clock"><span>00ㅅ 00ㅂ 00ㅊ</span></div>
-    <div class="greetings">
-      <h1 class="hello hidden"></h1>
-      <form action="" id="greeting-form" class="">
-        <input
-          type="text"
-          placeholder="Please, Tell me your name. ⤾"
-          id="username"
-          required
-        />
-      </form>
-    </div>
-    <div class="todo">
-      <form action="" id="todo-form">
-        <input type="text" class="todo-input" placeholder="To do?" />
-      </form>
-      <ul id="todo-list"></ul>
-    </div>
-    <div id="weather"><span>Gwangju </span><span>/ Clouds, 6℃</span></div>
-    <div id="quotes"><span id="quote"></span><span id="author"></span></div>
+    <form action="" id="greeting-form" class="">
+      <input type="text" placeholder="who? ⤾" id="username" required />
+    </form>
+    <main class="hidden">
+      <div class="main-column">
+        <header>
+          <div class="greetings">
+            <div class="greeting-text">
+              <h1 class="name hidden"></h1>
+            </div>
+          </div>
+
+          <div id="weather">
+            <span>@Gwangju </span><span>/ Clouds, 6℃</span>
+          </div>
+        </header>
+        <div class="todo">
+          <ul id="todo-list"></ul>
+          <form action="" id="todo-form">
+            <input type="text" class="todo-input" placeholder="To do?" />
+          </form>
+        </div>
+      </div>
+
+      <div class="main-column">
+        <div class="box-row"></div>
+        <div id="quotes" class="box-row">
+          <span id="author"></span><span id="quote"></span>
+        </div>
+        <div class="box-row">
+          <div class="clock"><span>00ㅅ 00ㅂ 00ㅊ</span></div>
+        </div>
+      </div>
+    </main>
+
     <!-- scripts -->
     <script src="js/clock.js"></script>
     <script src="js/greetings.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/bgimg.js"></script>
     <script src="js/quotes.js"></script>
-    <!-- <script src="js/weather.js"></script> -->
+    <script src="js/weather.js"></script>
   </body>
 </html>

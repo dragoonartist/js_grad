@@ -27,7 +27,7 @@ function paintTodo(newTodoObj) {
 
   const btn = document.createElement("button");
   btn.classList.add("delete-btn");
-  btn.innerText = "🏴‍☠️";
+  btn.innerText = " 🏴‍☠️";
   btn.addEventListener("click", onClickDeleteBtn);
 
   li.appendChild(span);

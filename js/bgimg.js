@@ -21,4 +21,4 @@ imgUrl = `img/${images[imgIndex]}`;
 body.style.height = "100vh";
 body.style.backgroundRepeat = "no-repeat";
 body.style.backgroundSize = "cover";
-body.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${imgUrl})`;
+body.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(${imgUrl})`;
